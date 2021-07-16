@@ -1,10 +1,3 @@
-// messenger chat code
-
-
-
-
-// form code
-
 
 function openForm() {
     var x = document.getElementById("myForm");
