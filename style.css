@@ -14,14 +14,18 @@ p {
         sans-serif !important;
 }
 
-/* .nav-item a {
-    color: rgb(255, 255, 255) !important;
-} */
 
 /************************
+
 header style starts
+
 ************************/
-/* navbar design */
+
+/* 
+
+navbar design 
+
+*/
 #nav {
     background-color: #2D25A0;
 }
@@ -49,7 +53,7 @@ div.container-fluid {
     padding: 10px 24px;
     text-decoration: none;
     color: white;
-    transition: .8s ease-in;
+    /* transition: .8s ease-in; */
 }
 
 #button:hover .fa-arrow-right {
@@ -67,13 +71,20 @@ div.container-fluid {
 }
 
 /* login style starts */
+/* The popup form - hidden by default */
 .form-popup {
     display: none;
     position: fixed;
-    bottom: 0;
-    right: 15px;
+    width: 300px;
+    /* height: 200px; */
+    margin: 5% auto;
+    /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
     border: 3px solid #f1f1f1;
+    box-shadow: 50px 50px 300px rgba(0, 0, 0, 0.597);
     z-index: 9;
+    border-radius: 7px;
 }
 
 /* Add styles to the form container */
@@ -81,6 +92,7 @@ div.container-fluid {
     max-width: 300px;
     padding: 10px;
     background-color: white;
+    border-radius: 15px;
 }
 
 /* Full-width input fields */
@@ -102,7 +114,7 @@ div.container-fluid {
 
 /* Set a style for the submit/login button */
 .form-container .btn {
-    background-color: #04AA6D;
+    background-color: #F34279;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -121,6 +133,24 @@ div.container-fluid {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+
+#myform form{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -150%) scale(0);
+     width: 300px;
+     height: 450px;
+     z-index: 2;
+     text-align: center;
+     padding: 20px;
+     border-radius: 20px;
+     background: #262626;
+     box-shadow: 38px 38px 56px #1e1e1e,
+     -25px -25px 38px #1e1e1e;
+     z-index: 1;
 }
 
 /************************
