@@ -63,44 +63,63 @@
                     </ul>
                 </div>
                 <form class="d-flex">
-                    <button id="button-login" onclick="openForm()" class="btn btn-outline-light"><i class=" fas
+                    <button id="button-login" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="btn btn-outline-light"><i class="fas
                         fa-arrow-right"></i>]
                         Log In</button>
                 </form>
             </div>
         </nav>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Sign in to Greenie</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body w-auto">
+                        <form class=""> 
+                            <div class="form-group text-center">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group text-center">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn m-2 btn-primary">Sign In</button>`
+                                <h5 class=" m-2">New to Greenie?</h5>
+                            <button type="submit" class="btn m-2 btn-info">Sign Up</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!-------------------------------------------------------------- 
 --------------------------header ends---------------------------
  --------------------------------------------------------------->
     <!-- main content starts -->
     <main>
-        <!-- login form -->
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="form-container">
-                <h1>Login</h1>
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+        <!-- Modal -->
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
 
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-        </div>
-        <!-- login form ends -->
-        <!-- <section class="liveSection container-fluid">
-            <div class="copaLive">
-                
-                <a id="button-live" href="https://www.sonyliv.com/sports/football-copa-america-2021-1700000734"
-                    target="_blank">Watch
-                    Live<i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="copaImage">
-                <img src="./images/banner.png" alt="">
-            </div>
-        </section> -->
+
+
+
+
 
 
         <!-- <section class="py-5"> -->
@@ -137,7 +156,8 @@
                         <img src="./images/players/player-4.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>
@@ -157,7 +177,8 @@
                         <img src="./images/players/player-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
                                 to
                                 additional content.</p>
                         </div>
@@ -168,7 +189,8 @@
                         <img src="./images/players/player-1.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
                                 to
                                 additional content. This content is a little bit longer.</p>
                         </div>

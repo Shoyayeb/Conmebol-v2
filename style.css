@@ -13,6 +13,9 @@ p {
     font-family: 'Poppins',
         sans-serif !important;
 }
+body {
+    margin: 0 !important;
+}
 
 /************************
 
@@ -199,9 +202,6 @@ main style starts
     border: 1px solid #ffffff;
     outline: none;
 }
-.bestPlayer {
-   
-}
 body {
     width: 100% !important;
 }
@@ -216,3 +216,35 @@ body {
         margin-top: 50px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

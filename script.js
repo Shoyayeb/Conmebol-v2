@@ -1,6 +1,6 @@
 
 function openForm() {
-    var x = document.getElementById("myForm");
+    var x = document.getElementById("id01");
     if (document.getElementById("myForm").style.display === "block") {
         x.style.display = "none"
     } else {
@@ -9,5 +9,6 @@ function openForm() {
 }
 
 function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+    document.getElementById("id01").style.display = "none";
 }
+
