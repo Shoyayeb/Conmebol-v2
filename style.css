@@ -184,31 +184,93 @@ main style starts
 
 /*live Section styles */
 
-/* #live {
-                                                                                        animation: liveSectionAnime 1s .3s;
-                                                                                        animation-fill-mode: both;
-                                                                                        animation-iteration-count: 1;
-                                                                                    }
-
-                                                                                    @keyframes liveSectionAnime {
-                                                                                        0% {
-                                                                                            color: rgba(0, 139, 139, 0.63);
-                                                                                            padding: 0;
-                                                                                        }
-
-                                                                                        100% {
-                                                                                            background-color: #2D25A0;
-                                                                                            padding: 120px 150px 140px;
-                                                                                        }
-                                                                                    } */
-@keyframes navAnime {
-    0% {
-        background-color: rgba(0, 139, 139, 0.63);
+@media screen and (min-width:992px) {
+    #live {
+        animation: liveSectionAnime 1s .3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
     }
 
-    100% {
-        background-color: #2D25A0;
+    @keyframes liveSectionAnime {
+        0% {
+            color: rgba(0, 139, 139, 0.63);
+            padding: 0;
+        }
+
+        100% {
+            background-color: #2D25A0;
+            padding: 120px 150px 140px;
+        }
     }
+
+    @keyframes navAnime {
+        0% {
+            background-color: rgba(0, 139, 139, 0.63);
+        }
+
+        100% {
+            background-color: #2D25A0;
+        }
+    }
+}
+@media screen and (min-width:600px) {
+    #live {
+        animation: liveSectionAnime 1s .3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes liveSectionAnime {
+        0% {
+            color: rgba(0, 139, 139, 0.63);
+            padding: 0;
+        }
+
+        100% {
+            background-color: #2D25A0;
+            /* padding: 120px 150px 140px; */
+        }
+    }
+
+    @keyframes navAnime {
+        0% {
+            background-color: rgba(0, 139, 139, 0.63);
+        }
+
+        100% {
+            background-color: #2D25A0;
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    #live {
+        animation: liveSectionAnime 1s .3s;
+        animation-fill-mode: both;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes liveSectionAnime {
+        0% {
+            color: rgba(0, 139, 139, 0.63);
+            padding: 0;
+        }
+
+        100% {
+            background-color: #2D25A0;
+            padding: 15px;
+        }
+    }
+
+    @keyframes navAnime {
+        0% {
+            background-color: rgba(0, 139, 139, 0.63);
+        }
+
+        100% {
+            background-color: #2D25A0;
+        }
+    }
+    
 }
 
 .liveTitle {
