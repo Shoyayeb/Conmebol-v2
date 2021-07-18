@@ -54,7 +54,8 @@ navbar design
     padding: 10px 24px;
     text-decoration: none;
     color: white;
-    /* transition: .8s ease-in; */
+    transition: .5s ease-in;
+    margin-top: 15px;
 }
 
 #button-login {
@@ -190,6 +191,13 @@ main style starts
         animation-fill-mode: both;
         animation-iteration-count: 1;
     }
+    #buttonLive {
+        display: none;
+    }
+
+    .heroSection {
+        height: 100vh;
+    }
 
     @keyframes liveSectionAnime {
         0% {
@@ -213,11 +221,22 @@ main style starts
         }
     }
 }
-@media screen and (min-width:600px) {
+
+@media screen and (min-width:601px) {
     #live {
         animation: liveSectionAnime 1s .3s;
         animation-fill-mode: both;
         animation-iteration-count: 1;
+    }
+    .liveTitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 46px !important;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .heroSection {
+        padding-bottom: 90px;
     }
 
     @keyframes liveSectionAnime {
@@ -228,7 +247,6 @@ main style starts
 
         100% {
             background-color: #2D25A0;
-            /* padding: 120px 150px 140px; */
         }
     }
 
@@ -242,11 +260,23 @@ main style starts
         }
     }
 }
+
 @media screen and (max-width:600px) {
     #live {
         animation: liveSectionAnime 1s .3s;
         animation-fill-mode: both;
         animation-iteration-count: 1;
+    }
+    .liveTitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 36px !important;
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+
+    .col-sm .img-fluid {
+        margin-top: 50px;
+        margin-bottom: 61px;
     }
 
     @keyframes liveSectionAnime {
@@ -257,7 +287,6 @@ main style starts
 
         100% {
             background-color: #2D25A0;
-            padding: 15px;
         }
     }
 
@@ -270,7 +299,7 @@ main style starts
             background-color: #2D25A0;
         }
     }
-    
+
 }
 
 .liveTitle {
@@ -289,6 +318,7 @@ main style starts
 
 .singleCard:hover {
     box-shadow: rgb(201, 201, 201) 1px 1px 10px;
+    cursor: pointer;
 }
 
 .singleCard {
