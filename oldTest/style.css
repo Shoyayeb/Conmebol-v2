@@ -13,7 +13,6 @@ p {
     font-family: 'Poppins',
         sans-serif !important;
 }
-
 body {
     margin: 0 !important;
 }
@@ -29,11 +28,13 @@ header style starts
 navbar design 
 
 */
-.navColor {
+#nav {
     background-color: #2D25A0;
-    animation-name: navAnime;
-    animation: navAnime 1s .2s;
-    animation-iteration-count: 0;
+}
+
+div.container-fluid {
+    margin: 0;
+    background: #2D25A0;
 }
 
 .nav-link {
@@ -56,7 +57,6 @@ navbar design
     color: white;
     /* transition: .8s ease-in; */
 }
-
 #button-login {
     font-family: Poppins;
     font-style: normal;
@@ -68,7 +68,6 @@ navbar design
     color: white;
     /* transition: .8s ease-in; */
 }
-
 #button-live .fa-arrow-right {
     margin-left: 7px;
 }
@@ -76,7 +75,6 @@ navbar design
 #button-live:hover .fa-arrow-right {
     animation: rightIcon .2s ease infinite alternate;
 }
-
 #button-login:hover .fa-arrow-right {
     animation: rightIcon .2s ease infinite alternate;
 }
@@ -90,7 +88,6 @@ navbar design
         transform: translateX(3px);
     }
 }
-
 /* button design ends */
 
 /* login style starts */
@@ -116,7 +113,7 @@ navbar design
     padding: 10px;
     background-color: white;
     border-radius: 30px;
-
+    
 }
 
 /* Full-width input fields */
@@ -176,38 +173,20 @@ navbar design
         -25px -25px 38px #1e1e1e;
     z-index: 1;
 }
-
 /* login style ends */
 /************************
 main style starts
 ************************/
 
 /*live Section styles */
-
-                                                                                    /* #live {
-                                                                                        animation: liveSectionAnime 1s .3s;
-                                                                                        animation-fill-mode: both;
-                                                                                        animation-iteration-count: 1;
-                                                                                    }
-
-                                                                                    @keyframes liveSectionAnime {
-                                                                                        0% {
-                                                                                            color: rgba(0, 139, 139, 0.63);
-                                                                                            padding: 0;
-                                                                                        }
-
-                                                                                        100% {
-                                                                                            background-color: #2D25A0;
-                                                                                            padding: 120px 150px 140px;
-                                                                                        }
-                                                                                    } */
-@keyframes navAnime {
-    0% {
-        background-color: rgba(0, 139, 139, 0.63);
-    }
-    100% {
-        background-color: #2D25A0;
-    }
+.liveSection {
+    background-color: #2D25A0;
+    padding: 120px 150px 140px;
+   /* display: flex;
+   flex-direction: row; */
+}
+#liveMargin {
+    margin: 0;
 }
 
 .liveTitle {
@@ -223,12 +202,49 @@ main style starts
     border: 1px solid #ffffff;
     outline: none;
 }
-.singleCard:hover {
-    box-shadow: rgb(201, 201, 201) 1px 1px 10px;   
+body {
+    width: 100% !important;
 }
 
-.singleCard {
-    padding: 15px;
-    border-radius: 7px !important;
-    border: rgb(243, 243, 243) 1px solid !important;
+/* live section ends */
+
+@media screen and (max-width: 768px) {
+    /* .liveSection {
+        padding: 15px;
+    } */
+    /* #liveImage {
+        margin-top: 50px;
+    } */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

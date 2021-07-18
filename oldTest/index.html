@@ -26,8 +26,8 @@
     <!-------------------------------------------------------------- 
 --------------------------header starts---------------------------
  --------------------------------------------------------------->
-    <header class="">
-        <nav class="navbar navColor navbar-expand-lg navbar-dark">
+    <header>
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,15 +41,15 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#top-Players">Top Players</a>
+                            <a class="nav-link" href="#">Clubs</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 World Cup 2023
                             </a>
-                            <ul class="dropdown-menu navColor" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="#">Venue</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Venue</a></li>
                                 <li><a class="dropdown-item" href="#">Schedule</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -78,10 +78,10 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body w-auto">
-                        <form class="">
+                        <form class=""> 
                             <div class="form-group text-center">
                                 <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" required class="form-control" id="exampleInputEmail1"
+                                <input type="email" class="form-control" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="Enter email">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with
                                     anyone else.</small>
@@ -89,23 +89,20 @@
                             <div class="form-group text-center">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1"
-                                    placeholder="Password" required>
+                                    placeholder="Password">
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                                 <label class="form-check-label" for="exampleCheck1">Remember Me</label>
                             </div>
-
+                            
                             <div class="text-center">
                                 <button type="submit" class="btn m-2 btn-primary">Sign In</button>`
                                 <h5 class=" m-2">New to Greenie?</h5>
-                                <button type="submit" class="btn m-2 btn-info">Sign Up</button>
+                            <button type="submit" class="btn m-2 btn-info">Sign Up</button>
                             </div>
+                            
                         </form>
-                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Hi, </strong> Checkout my new website <a class="btn btn-light" href="#">Greenie</a>.
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -116,91 +113,123 @@
  --------------------------------------------------------------->
     <!-- main content starts -->
     <main>
-        <div class="container" style="background-color: green;">
-            <div class="d-flex">
-                <div>
+        <!-- Modal -->
+
+
+
+
+
+
+
+
+        <!-- <section class="py-5"> -->
+        <div class="liveSection d-none " id="liveMargin">
+            
+            <div class="row">
+                <div class="col-md-6">
                     <h1 class="liveTitle">
                         Conmebol Copa America 2021
                     </h1>
-                    <a id="button-live" href="#"
+                    <a id="button-live" href="https://www.sonyliv.com/sports/football-copa-america-2021-1700000734"
                         target="_blank">Watch
                         Live<i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div>
-                    <img class="img-fluid" src="../images/banner.png" alt="">
+                <div class="col-md-6">
+                    <img class="img-fluid" id="liveImage" src="./images/banner.png" alt="">
                 </div>
             </div>
         </div>
+        <!-- </section> -->
+        <!-- <div class="copaLive">
+                        
+                    </div> -->
 
-        <!-- Modal -->
-        <div id="top-Players"
-            class="d-flex rounded-3 flex-wrap justify-content-evenly align-items-center container bg-light mt-lg-2 mt-sm-3">
-            <div class="card text-dark bg-light mb-3 singleCard singleCard" style="width: 18rem;">
-                <img src="../images/players/player-1.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
+
+        <!-- <div class="copaImage">
+                        
+                    </div> -->
+
+
+        <section class="bestPlayer">
+            <div class="d-flex flex-wrap flex-lg-row flex-sm-column">
+                <div class="col">
+                    <div class="card h-100 w-75">
+                        <img src="./images/players/player-4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75">
+                        <img src="./images/players/player-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a short card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75">
+                        <img src="./images/players/player-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 w-75">
+                        <img src="./images/players/player-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural
+                                lead-in
+                                to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-2.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-3.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-4.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-5.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-6.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-7.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card text-dark bg-light mb-3 singleCard" style="width: 18rem;">
-                <img src="../images/players/player-8.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-            <div class="card border rounded-3 text-dark bg-light mb-3 singleCard " style="width: 18rem;">
-                <img src="../images/players/player-9.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                </div>
-            </div>
-        </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <!-- footer section -->
+
+
+
+
+
+
+
+
 
     <footer>
 
