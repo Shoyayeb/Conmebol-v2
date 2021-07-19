@@ -234,7 +234,9 @@ main style starts
         font-weight: bold;
         color: #FFFFFF;
     }
-
+#liveImage {
+    margin-top: 250px !important;
+}
     .heroSection {
         padding-bottom: 90px;
     }
